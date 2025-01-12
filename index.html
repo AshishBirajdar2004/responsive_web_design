@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="styles5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <header><h1>C++ Documentation</h1></header>
+        <ul>
+            <li><a href="#Introduction_To_C++">Introduction To C++</a></li>
+            <li><a href="#strucure_and_syntax">Strucure And Syntax</a></li>
+            <li><a href="#data_types_and_variables">Data Types and Variables in C++</a></li>
+            <li><a href="#control_statements">Control Statements in C++</a></li>
+            <li><a href="#functions">Functions in C++</a></li>
+
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <!-- <nav id="navbar">
+          <header>name of documentation</header>
+          <ul>
+            <li><a class="nav-link" href="#">name of header</li>
+          </ul>
+        </nav> -->
+
+        <!-- 5sets containing, 10 p elements, 5 code elements, 5li list elements in total -->
+        
+
+
+        <section class="main-section" id="Introduction_To_C++">
+            <header>
+                <h1>Introduction To C++</h1>
+            </header>
+            <article>
+                <h3>What is C++?</h3>
+                <p>C++ is a general-purpose programming language created by Bjarne Stroustrup in 1979 at Bell Labs. It is an extension of the C programming language, adding support for advanced programming paradigms such as object-oriented programming (OOP) and features for low-level memory management. C++ combines the power and efficiency of C with modern features for software development.</p>
+                <h3>Key Features</h3>
+                <ul class="ul-outer">
+                    <li>Object-Oriented Programming (OOP) concepts like classes and inheritance.
+                    </li>
+                    <li>Low-level memory manipulation via pointers.
+                    </li>
+                    <li>A rich Standard Template Library (STL).
+                    </li>
+                    <li>Platform independence and high performance.
+                    </li>
+                    <li>Backward compatibility with C.
+                    </li>
+                </ul>
+                <h3>Common Use Case</h3>
+                <ul class="ul-outer">
+                    <li>Game Development: Popular for creating high-performance games using engines like Unreal Engine.
+                    </li>
+                    <li>System Programming: Ideal for operating systems, device drivers, and embedded systems.
+                    </li>
+                    <li>Web Browsers: Used in the development of Chromium and Firefox.
+                    </li>
+                    <li>Financial Applications: Preferred for trading systems and simulations because of its performance.
+                    </li>
+                    <li>Scientific Computing: Extensively used in simulations and high-performance computing tasks.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        
+        <section class="main-section" id="strucure_and_syntax">
+            <header>
+                <h1>Strucure And Syntax</h1>
+            </header>
+            <article>
+                <h3>Basic Structure of a C++ Program</h3>
+                <p>To get started with writing C++, open a Code Editor and write your first "Hello world" C++ code. A simple C++ program typically consists of the following components:</p>
+                <div class="code">
+                    <code>#include <iostream>  // Preprocessor directive <br>int main() {  // Main function <br>std::cout << "Hello, World!" << std::endl; // Output statement <br>return 0;   // End of the program <br>}</code>
+                </div>
+                <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your terminal!</p>
+                <h3> Key Components</h3>
+                <ul class="ul-outer">
+                    <li><span class="bold2">Preprocessor Directives:</span>
+                        <ol class="ol-inner">
+                            <li>Begin with # (e.g., #include &lt;iostream&gt;).</li>
+                            <li>Used to include libraries or define macros.</li>
+                            <li>Example: #include &lt;iostream&gt; includes the Input/Output stream library.</li>
+                        </ol>
+                    </li>
+                    <li><span class="bold2">Main Function:</span>
+                        <ol class="ol-inner">
+                            <li>Every C++ program must have a main() function, which is the entry point.
+                            </li>
+                        </ol>
+                    </li>
+                    <li><span class="bold2">Statements and Semicolons:</span>
+                        <ol class="ol-inner">
+                            <li>Each statement ends with a semicolon (;).</li>
+                            <li>Example: std::cout << "Hello" ;</li>
+                        </ol>
+                    </li>
+                    <li><span class="bold2">Braces {}:</span>
+                        <ol class="ol-inner">
+                            <li>Enclose blocks of code.</li>
+                        </ol>
+                    </li>
+                    <li><span class="bold2">Comments:</span>
+                        <ol class="ol-inner">
+                            <li>Single-line comments: // This is a comment</li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        
+        <section class="main-section" id="data_types_and_variables">
+            <header>
+                <h1>Data Types and Variables in C++</h1>
+            </header>
+            <article>
+                <h3>Data Types in C++</h3>
+                <p>Data types in C++ define the kind of data a variable can hold. They specify the type of value (e.g., integer, floating-point, character) and determine how much memory the variable occupies..C++ provides several built-in data types, classified into primitive and derived types.</p>
+                <div class="data">
+                    <p><span class="bold1">Premitive Data Types:</span>
+                        <ol class="ol-outer">
+                            <li><span class="bold2">Integer Type:</span>
+                                <ul class="ul-inner">
+                                    <li>Used to store whole numbers.
+                                    </li>
+                                    <li>Examples:<code>int age = 20;<br>long population = 7000000000; // Larger range<br>short smallNumber = 10;      // Smaller range</code></li>
+                                </ul>
+                                <table class="code">
+                                    <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Size (in bytes)</th>
+                                            <th>Range</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>int</th>
+                                            <td>4</td>
+                                            <td>-2,147,483,648 to 2,147,483,647</td>
+                                        </tr>
+                                        <tr>
+                                            <th>long</th>
+                                            <td>4 or 8</td>
+                                            <td>Larger than int</td>
+                                        </tr>
+                                        <tr>
+                                            <th>short</th>
+                                            <td>2</td>
+                                            <td>-32,768 to 32,767</td>
+                                        </tr>
+                                        <tr>
+                                            <th>unsigned int</th>
+                                            <td>4</td>
+                                            <td>0 to 4,294,967,295</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li><span class="bold2">Floating Point Type:</span>
+                                <ul class="ul-inner">
+                                    <li>Used to store whole numbers.
+                                    </li>
+                                    <li>Examples:<code>float pi = 3.14f;<br>double largeDecimal = 3.14159265358979;</code></li>
+                                </ul>
+                                <table class="code">
+                                    <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Size (in bytes)</th>
+                                            <th>Range</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>float</th>
+                                            <td>4</td>
+                                            <td>Up to 7 digits</td>
+                                        </tr>
+                                        <tr>
+                                            <th>double</th>
+                                            <td>8</td>
+                                            <td>Up to 15 digits</td>
+                                        </tr>
+                                        <tr>
+                                            <th>long double</th>
+                                            <td>10/16</td>
+                                            <td>More precision (platform-dependent)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li><span class="bold2">Charecter Type:</span>
+                                <ul class="ul-inner">
+                                    <li>Used to store a single character.</li>
+                                    <li>Example <pre><code>char grade = 'A';</code></pre></li>
+                                    <li>Size: 1 byte; Range: -128 to 127 or 0 to 255 (depends on sign).</li>
+                                </ul>
+                            </li>
+                            <li><span class="bold2">Boolean Type:</span>
+                                <ul class="ul-inner">
+                                    <li>Represents true or false.</li>
+                                    <li>Example <pre><code>bool isPassed = true;</code></pre></li>
+                                    <li>Size: 1 byte.</li>
+                                </ul>
+                            </li>
+                            <li><span class="bold2">Void Type:</span>
+                                <ul class="ul-inner">
+                                    <li>Represents "no value."</li>
+                                    <li>Used in functions that don't return a value: <pre><code>void displayMessage(){<br>std::cout << "Hello!";<br>}</code></pre></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>
+                    <p>
+                        <span class="bold1">Derived And User-Defined:</span>
+                        <ol class="ol-outer">
+                            <li><span class="bold2">Arrays:</span>
+                                <ul class="ul-inner">
+                                    <li>Collection of elements of the same type.</li>
+                                    <li>Example: <code>int numbers[5] = {1, 2, 3, 4, 5};</code></li>
+                                </ul>
+                            </li>
+                            <li><span class="bold2">Pointers:</span>
+                                <ul class="ul-inner">
+                                    <li>Stores the memory address of another variable.</li>
+                                    <li>Example: <code>int x = 10;<br>int* ptr = &x;</code></li>
+                                </ul>
+                            </li>
+                            <li><span class="bold2">Structures and Classes:</span>
+                                <ul class="ul-inner">
+                                    <li>User-defined types that group variables of different types.</li>
+                                    <li>Example: <code>struct Point {<br>int x;<br>int y;<br>};</code></li>
+                                </ul>
+                            </li>
+                            <li><span class="bold2">Enumerations:</span>
+                                <ul class="ul-inner">
+                                    <li>Used to define a set of named constants.</li>
+                                    <li>Example: <code>enum Color { RED, GREEN, BLUE };</code></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>   
+                </div>    
+                <h3>Variables in C++</h3>
+                <p>Variables are used to store data that can be changed during program execution.</p>
+                <ul class="ul-outer">
+                    <li><span class="bold2">Declaration and Initialization:</span>
+                        <ul class="ul-inner">
+                            <li>Declaration: Specifies the type and name of the variable. Ex: int age;
+                            </li>
+                            <li>Initialization: Assigns an initial value to the variable. Ex: int age = 20;
+                            </li>
+                            <li>Multiple Declarations: You can declare multiple variables of the same type in one line.
+                                Ex: int x = 5, y = 10, z = 15;
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="bold2">Variable Types:</span>
+                        <ul class="ul-inner">
+                            <li>Local Variables: Declared inside a function and accessible only within that function.
+                            </li>
+                            <li>Global Variables: Declared outside all functions and accessible throughout the program.
+                            </li>
+                            <li>Static Variables: Retain their value between function calls.</li>
+                            <li>Constant Variables: Variables that cannot be modified after initialization.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        
+        <section class="main-section" id="control_statements">
+            <header>
+                <h1>Control Statements in C++</h1>
+            </header>
+            <article>
+                <h3>Decision-Making Statements</h3>
+                <ul class="ul-outer">
+                    <li><span class="bold1">if Statement:</span>
+                        <p>An if statement is a powerful control structure used in programming to execute a specific block of code only if a particular condition evaluates to true. It's essential for decision-making in programs.</p>
+                        <ul>
+                            <li>Condition Evaluation: The if statement checks a condition (usually a comparison or logical expression).</li>
+                            <li>True Condition: If the condition evaluates to true, the code block within the if statement is executed.</li>
+                            <li>False Condition: If the condition evaluates to false, the code block within the if statement is skipped, and the program continues with the next statement after the if block.</li>
+                        </ul>
+                        <div class="code"><code>if (x > 0) {<br>   std::cout << "Positive";<br>}<br></code>
+                        </div>
+                    </li>
+                    <li><span class="bold1">if-else Statement:</span>
+                        <p>Absolutely! An if-else statement is a fundamental control structure in programming that allows you to execute different blocks of code based on whether a condition is true or false. It's a great way to handle decision-making in your program.</p>
+                        <ul>
+                            <li>Condition Evaluation: The if statement checks a condition.</li>
+                            <li>True Condition: If the condition evaluates to true, the code block within the if part is executed.</li>
+                            <li>False Condition: If the condition evaluates to false, the code block within the else part is executed.</li>
+                        </ul>
+                        <div class="code"><code>if (x > 0) {<br>   std::cout << "Positive";<br>} else {<br>    std::cout << "Non-positive";<br>}<br></code></div>
+                        
+                    </li>
+                    <li><span class="bold1">else if Ladder:</span>
+                        <p>The else if (or elif in Python) ladder is a way to test multiple conditions sequentially. It allows you to execute different blocks of code based on which condition is true first. If none of the conditions are true, an optional else block can be executed.</p>
+                        <ul>
+                            <li>Condition Evaluation: The if statement checks the first condition.</li>
+                            <li>True Condition: If the condition evaluates to true, the corresponding code block is executed, and the rest of the ladder is skipped.</li>
+                            <li>False Condition: If the first condition is false, the else if (or elif) statement checks the next condition, and so on.</li>
+                            <li>Final Else: If none of the conditions are true, the else block (if provided) is executed.</li>
+                        </ul>
+                        <div class="code">
+                            <code>if (x > 0) {<br>    std::cout << "Positive";<br>} else if (x < 0) {<br>    std::cout << "Negative";<br>} else {<br>    std::cout << "Zero";<br>}<br></code>
+                        </div>
+                    </li>
+                    <li><span class="bold1">switch Statement:</span>
+                        <p>The switch statement is a control structure that allows you to execute one of many code blocks based on the value of a variable or expression. It's a convenient way to handle multiple possible values and their corresponding actions without writing numerous if-else statements.</p>
+                        <ul>
+                            <li>Value Matching: The switch statement evaluates an expression or variable.</li>
+                            <li>Case Blocks: Each possible value (called a "case") has a corresponding block of code. When a matching value is found, the associated code block is executed.</li>
+                            <li>Default Block: If none of the cases match, an optional default block can be executed.</li>
+                        </ul>
+                        <div class="code"><code>switch (choice) {<br>    case 1: std::cout << "Option 1"; break;<br>    case 2: std::cout << "Option 2"; break;<br>    default: std::cout << "Invalid option";<br>}<br></code>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3>Looping Statements</h3>
+                <ul class="ul-outer">
+                    <li><span class="bold1">for Loop:</span> 
+                        <p>A for loop is a control structure used to repeat a block of code a specific number of times. It's especially useful when you know beforehand how many times you want the loop to execute.</p>
+                        <ul>
+                            <li>Initialization: You set an initial value for a loop control variable.</li>
+                            <li>Condition: The loop continues to execute as long as this condition evaluates to true.</li>
+                            <li>Iteration: After each execution of the loop block, the loop control variable is updated.</li>
+                        </ul>
+                        <div class="code"><code>for (int i = 0; i < 5; i++) {<br>    std::cout << i << " ";<br>}<br></code>
+                        </div>
+                    </li>
+                    <li><span class="bold1">while Loop:</span>
+                        <p>A while loop is a control structure used to repeat a block of code as long as a specified condition remains true. It's handy for situations where you don't know beforehand how many times you'll need to execute the loop.</p>
+                        <ul>
+                            <li>Condition Evaluation: The condition is evaluated before each iteration of the loop.</li>
+                            <li>True Condition: If the condition is true, the code block inside the loop is executed.
+                            </li>
+                            <li>False Condition: When the condition becomes false, the loop stops, and the program continues with the next statement after the loop.</li>
+                        </ul>
+                        <div class="code"><code>int i = 0;<br>while (i < 5) {<br>    std::cout << i << " ";<br>    i++;<br>}<br></code>
+                        </div>
+                        
+                    </li>
+                    <li><span class="bold1">do-while Loop:</span>
+                        <p>The do-while loop is a control structure that guarantees the execution of a block of code at least once before checking the condition. After the first iteration, the loop continues to execute as long as the specified condition remains true. It's particularly useful when the code block needs to run at least once regardless of the condition.</p>
+                        <ul>
+                            <li>Initial Execution: The code block inside the do part is executed once unconditionally.
+                            </li>
+                            <li>Condition Evaluation: After executing the block, the condition is evaluated.
+                            </li>
+                            <li>True Condition: If the condition is true, the loop continues to execute the code block.
+                            </li>
+                            <li>False Condition: If the condition is false, the loop stops, and the program continues with the next statement after the loop.</li>
+                        </ul>
+                        <div class="code"><code>int i = 0;<br>do {<br>    std::cout << i << " ";<br>    i++;<br>} while (i < 5);<br></code>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3>Jump Statements</h3>
+                <ul class="ul-outer">
+                    <li><span class="bold1">break:</span>
+                        <p>the break statement is used to exit the nearest enclosing loop (for, while, do-while) or switch statement prematurely. Once a break statement is encountered, the program flow immediately exits that loop or switch block and continues executing the code following it.</p>
+                        <div class="code"><code>for (int i = 0; i < 5; i++) {<br>    if (i == 3) break;<br>    std::cout << i << " ";<br>}<br></code>
+                        </div>
+                    </li>
+                    <li><span class="bold1">continue:</span>
+                        <p>The continue statement is used to skip the rest of the current iteration of a loop and immediately move to the next iteration. It is commonly used when a specific condition occurs, and you want to skip certain parts of the loop body without exiting the loop entirely.</p>
+                        <div class="code">
+                            <code>for (int i = 0; i < 5; i++) {<br>    if (i == 3) continue;<br>    std::cout << i << " ";<br>}<br></code>
+                        </div>
+                    </li>
+                    <li><span class="bold1">return:</span>
+                        <p>The return statement is used to exit a function and optionally return a value to the calling function. It marks the end of the function's execution, and any code after the return statement within the function will not execute.</p>
+                        <div class="code"><code>return 0;</code>
+                        </div>
+                    </li>
+                    <li><span class="bold1">goto (Rarely Used):</span>
+                        <p>goto statement allows you to jump to a labeled statement within the same function. Although it is supported in languages like C and C++, it is rarely used because it can lead to unstructured and hard-to-read code (also called "spaghetti code"). However, it might occasionally be useful for specific scenarios like breaking out of deeply nested loops.</p>
+                        <div class="code"><code>goto label;<br>label: std::cout << "Jumped!";<br></code>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        
+        <section class="main-section" id="functions">
+            <header>
+                <h1>Functions in C++</h1>
+            </header>
+            <article class="alternate">
+                <h3>What is Function in C++?</h3>
+                <p>A function is a reusable block of code designed to perform a specific task, helping to organize and
+                    modularize a program.<br>A typical function includes:</p>
+                <ul>
+                    <li>A return type (data type of the value the function returns).
+                    </li>
+                    <li>A name (identifier for the function).
+                    </li>
+                    <li>Parameters (optional inputs to the function).
+                    </li>
+                    <li>A body (statements defining the task).
+                    </li>
+                    <div class="code"><code>int add(int a, int b) { // Function header<br>    return a + b;       // Function body<br>}<br></code>
+                    </div>
+                </ul>
+                
+                <h3>Types of Functions</h3>
+                <p>Functions in programming are categorized based on their purpose, behavior, and structure. Below is an overview of types of functions commonly encountered in C++ (or similar languages):</p>
+                <ol class="ol-outer">
+                    <li><span class="bold1">Built-in Functions:</span>
+                        <ul class="ul-inner">
+                            <li>Predefined in libraries, e.g., std::sqrt() (square root), std::abs() (absolute value).
+                            </li>
+                            <li>Include headers like &lt;cmath> or &lt;cstdlib> to use them.</li>
+                        </ul>
+                    </li>
+                    <li><span class="bold1">User-Defined Functions:</span>
+                        <ul class="ul-inner">
+                            <li>Created by the programmer to perform specific tasks.</li>
+                        </ul>
+                    </li>
+                    <div class="code"><code>float divide(int a, int b) {<br>}<br></code>
+                    </div>
+                </ol>
+                
+                <h3>Function Components</h3>
+                <ul class="ul-outer">
+                    <li><span class="bold1">Return type:</span>
+                        <p>Specifies the type of value the function will return (e.g., int, float, void). return type of a function specifies what type of value the function will return to the caller. This type is declared before the function's name in its definition and declaration.</p>
+                        <div class="code"><code>int square(int n) {<br>    return n * n; // Returns an integer value<br>}<br></code>
+                        </div>
+                    </li>
+                    <li><span class="bold1">Parameters:</span>
+                        <p>Parameters are variables specified in a function's definition that act as placeholders for the values (called arguments) passed to the function when it is called. They allow functions to operate on data provided at runtime, making the function more dynamic and reusable.</p>
+                        <div class="code"><code>int multiply(int x, int y) { // x and y are parameters<br>    return x * y;<br>}<br></code>
+                        </div>
+                    </li>
+                    <li><span class="bold1">Function Body:</span>
+                        <p>Contains the actual code to execute.The function body is the block of code enclosed within curly braces {} in a function definition. It contains the statements that define the behavior of the function—what it does when it is called.</p>
+                        <div class="code"><code>int subtract(int a, int b) {<br>    int result = a - b;<br>    return result;<br>}<br></code>
+                        </div>
+                    </li>
+                </ul>
+                <h3>Function Declaration and Definition</h3>
+                <ul class="ul-outer">
+                    <li><span class="bold1">Declaration (Prototype):</span>
+                        <p>A function declaration (prototype) is a statement that informs the compiler about the existence of a function, including its name, return type, and parameters, but without providing the implementation (function body). It allows the compiler to validate calls to the function before the actual function definition appears.</p>
+                        <div class="code"><code>int add(int, int); // Declaration</code>
+                        </div> 
+                    </li>
+                    <li><span class="bold1">Function Definition:</span>
+                        <p>A function definition provides the actual implementation of a function—the logic or code that specifies what the function does when it is called. It includes the function name, return type, parameters, and the function body, where the implementation resides.</p>
+                        <div class="code"><code>int add(int a, int b) { // Definition<br>    return a + b;<br>}<br></code>
+                        </div>
+                    </li>
+                </ul>
+                <h3>Function Call</h3>
+                <p>To execute a function, call it using its name and provide necessary arguments:</p>
+                <div class="code"><code>    int sum = add(10, 5); // Calling the add function<br>    std::cout << "Sum: " << sum;<br></code>
+                </div>
+            </article>
+        </section>
+        
+        <!-- atleast one media query -->
+    </main>
+</body>
+
+</html>
